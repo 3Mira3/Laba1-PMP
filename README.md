@@ -69,6 +69,4 @@ Android Studio автоматично запропонує встановити 
 
 ### Репозиторій
 
-``` 
 https://github.com/3Mira3/Laba1-PMP.git
-```
