@@ -23,16 +23,18 @@ Android-додаток для розрахунку заощаджень у ін�
 - Навігація між екранами через `Activity` та `Intent`
 
 ## Структура проєкту
+```
 app/
 ├─ src/main/java/...
-│ ├─ MainActivity.kt
-│ ├─ Calculation1Activity.kt
-│ ├─ Calculation2Activity.kt
-│ ├─ ResultsActivity.kt
-│ └─ CurrencyCalculator.kt
+│  ├─ MainActivity.kt
+│  ├─ Calculation1Activity.kt
+│  ├─ Calculation2Activity.kt
+│  ├─ ResultsActivity.kt
+│  └─ CurrencyCalculator.kt
 ├─ src/main/res/layout/
 ├─ src/main/res/layout-land/
 └─ AndroidManifest.xml
+```
 
 ## Як запустити проєкт локально
 
