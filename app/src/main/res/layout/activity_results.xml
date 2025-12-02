@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_medium"
+        tools:context=".ResultsActivity">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/results_title"
+            style="@style/TitleText"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSyLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hypothetical_annual_income"
+            style="@style/LabelText"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSyValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00 грн"
+            style="@style/ResultText"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintTop_toBottomOf="@id/tvSyLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvScLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/amount_spent_exchange"
+            style="@style/LabelText"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@id/tvSyValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvScValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00 грн"
+            style="@style/ResultText"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintTop_toBottomOf="@id/tvScLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvWLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/currency_purchased"
+            style="@style/LabelText"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@id/tvScValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvWValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            style="@style/ResultText"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintTop_toBottomOf="@id/tvWLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvShLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/currency_value_end_year"
+            style="@style/LabelText"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@id/tvWValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvShValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00 грн"
+            style="@style/ResultText"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintTop_toBottomOf="@id/tvShLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSlLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hryvnia_balance"
+            style="@style/LabelText"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@id/tvShValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSlValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00 грн"
+            style="@style/ResultText"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintTop_toBottomOf="@id/tvSlLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total_sum"
+            style="@style/LabelText"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@id/tvSlValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00 грн"
+            style="@style/ResultText"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintTop_toBottomOf="@id/tvHLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total_savings"
+            style="@style/LabelText"
+            android:layout_marginTop="@dimen/margin_large"
+            app:layout_constraintTop_toBottomOf="@id/tvHValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0.00 грн"
+            style="@style/ResultText"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintTop_toBottomOf="@id/tvRLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_ok"
+            style="@style/PrimaryButton"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            app:layout_constraintTop_toBottomOf="@id/tvRValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/margin_medium" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
